@@ -1,0 +1,230 @@
+header {
+  min-height: 90vh;
+  position: relative;
+}
+header > div {
+  flex-basis: 100%;
+}
+header > div:last-child {
+  height: inherit; /* takes the height from the header */
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header > div:last-child img {
+  position: absolute;
+  right: -25em;
+}
+.header-short-notice {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+h1 {
+  margin: 0.15em 0;
+  font-size: 6rem;
+  line-height: 1;
+}
+.intro-text {
+  font-size: 1.7rem;
+  max-width: 60ch;
+  line-height: 1.5;
+}
+.header-cta {
+  margin: 1.7em 0;
+  background-color: #fff;
+  width: fit-content;
+  padding: 1.2em 2em;
+  font-size: 1.7rem;
+  border-radius: 3px;
+}
+/* last p tag inside the first div of the header */
+header > div:first-child p:last-child {
+  font-size: 1.5rem;
+  max-width: 25rem;
+}
+
+/* ======== Features ======= */
+.feat-container {
+  background-color: #f6f9fc;
+}
+.features {
+  min-height: 100vh;
+  padding: 6em 2em;
+}
+.features h2 {
+  font-size: 3rem;
+  margin: 1em 0;
+}
+.features-intro-text {
+  font-size: 1.75rem;
+  line-height: 1.5;
+  max-width: 80ch;
+}
+.features-cta {
+  margin-top: 3em;
+  gap: 2em;
+}
+.features-cta a {
+  border-radius: 5px;
+  padding: 0.5em 1.6em;
+  font-size: 1.75rem;
+}
+.features-cta a:last-child {
+  border: 1px solid #ff5c35;
+  color: #ff5c35;
+}
+.features-cards {
+  margin-top: 8em;
+  padding: 2em 8em;
+  gap: 7.5em;
+  grid-template-columns: repeat(3, 1fr);
+}
+.feature-card {
+  padding: 5em;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.feature-card h3 {
+  font-size: 1.95rem;
+  margin-bottom: 1.25em;
+}
+.feature-card p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 4em;
+}
+.popular-features {
+  border-top: 1px solid rgb(0, 0, 0, 0.5);
+}
+.popular-features h4 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 1.4em 0;
+}
+.popular-features ul {
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+.popular-features a {
+  padding: 0.75em 1.4em;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  /* width: fit-content; */
+}
+
+/* ======= Stats ======= */
+.stats-wrapper {
+  background-image: linear-gradient(45deg, #0fbfbf, #4fb06d);
+}
+.stats {
+  min-height: 100vh;
+  padding: 5em 2em;
+}
+.stats h2 {
+  font-size: 3.2rem;
+  max-width: 40ch;
+  padding: 1em 0;
+}
+.stats-intro {
+  font-size: 1.75rem;
+  max-width: 70ch;
+  line-height: 1.65;
+}
+.stats-cards {
+  margin-top: 5em;
+  grid-template-columns: repeat(4, 250px);
+}
+.stat-card {
+  padding: 3em;
+  /* max-width: fit-content; */
+}
+.stat-card h3 {
+  font-size: 4rem;
+  position: relative;
+  margin: 0.5em 0;
+}
+h3.stat-add-plus::after {
+  content: '+';
+  position: absolute;
+  top: 0;
+  font-size: 1.75rem;
+}
+.stat-card p {
+  font-size: 1.7rem;
+}
+
+/* Remove borders from stats card */
+.stat-card:first-child,
+.stat-card:nth-child(2),
+.stat-card:nth-child(3),
+.stat-card:nth-child(4) {
+  border-top: none;
+  border-bottom: none;
+}
+.stat-card:nth-child(5),
+.stat-card:nth-child(6),
+.stat-card:nth-child(7),
+.stat-card:last-child {
+  border-bottom: none;
+}
+.stat-card:nth-of-type(even) {
+  border-left: none;
+  border-right: none;
+}
+.stat-card:nth-child(1),
+.stat-card:nth-child(5) {
+  border-left: none;
+}
+
+/* ======= Customers ======= */
+.customers {
+  min-height: 50vh;
+}
+.customers > div {
+  flex-basis: 100%;
+}
+.customers-intro h3 {
+  font-size: 4rem;
+  margin-bottom: 1em;
+}
+.customers-intro p {
+  font-size: 1.8rem;
+  max-width: 47ch;
+  line-height: 1.5;
+}
+.customers-logo {
+  gap: 4em;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ======= Start Growing ======= */
+.start-growing {
+  min-height: 80vh;
+  gap: 5em;
+  justify-content: space-evenly;
+}
+.start-growing h3 {
+  font-size: 3rem;
+}
+.start-growing p {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  margin: 1.3em 0;
+  max-width: 70ch;
+}
+.start-growing a {
+  width: fit-content;
+  padding: 1.2em 2em;
+  border-radius: 4px;
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+.start-growing span {
+  font-size: 1.4rem;
+}

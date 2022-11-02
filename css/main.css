@@ -1,0 +1,79 @@
+@import url('./utilities.css');
+
+/* ========= Navigation ========= */
+
+/* top header */
+.top-header {
+  gap: 2em;
+  padding: 1.9em 0;
+  background-color: #fff;
+}
+.top-header a {
+  font-size: 1.35rem;
+}
+
+.top-header-left,
+.top-header-right {
+  gap: 3em;
+}
+nav {
+  min-height: 10vh;
+  padding: 4.5em 0;
+  background-color: #fff;
+}
+nav ul {
+  list-style-type: none;
+  margin-left: 5em;
+  gap: 4em;
+}
+nav ul a {
+  font-size: 1.75rem;
+}
+.start-free {
+  font-size: 1.5rem;
+  padding: 0.7em;
+  border-radius: 4px;
+}
+
+/* ========= Footer ========= */
+.footer-container {
+  margin-top: 3em;
+  background-color: #213343;
+}
+footer {
+  min-height: 100vh;
+  padding: 5em 0;
+}
+.social-media-sitemap {
+  gap: 10em;
+}
+.social-media-sitemap hr {
+  width: 80%;
+}
+.social-media-sitemap > div {
+  gap: 3em;
+}
+.social-media-sitemap a {
+  font-size: 1.7rem;
+}
+.copyright {
+  margin-top: 5em;
+  padding: 2em;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 2em;
+}
+.copyright small {
+  font-size: 1.3rem;
+}
+.copyright p a {
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+.copyright p a:nth-child(2) {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  margin: 0 1em;
+  padding: 0 1.2em;
+}
